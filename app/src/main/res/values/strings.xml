@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">Demo</string>
+
+    <string name="digit_abc">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <!--Exception message-->
+    <string name="exception_error_network">It seems that your internet connection is not found please check your connection.</string>
+    <string name="exception_error_server">Server is under maintenance, please try after some time.</string>
+    <string name="exception_error_unparceble">Unknown data found from server.</string>
+    <string name="exception_error_database">Database error</string>
+
+    <!--Error strings-->
+    <string name="error_empty">Field cannot be empty</string>
+    <string name="error_password_conflict">Your password and confirmation password do not match</string>
+    <string name="error_new_password_conflict">New password does not match the confirm password</string>
+    <string name="error_login">Please login to access this feature</string>
+    <string name="error_email">Please enter valid email address</string>
+    <string name="error_password">Password must be minimum 6 to 15 character long.</string>
+    <string name="error_mobile">Please enter valid mobile number</string>
+    <string name="error_pincode">Please enter valid pin code</string>
+    <string name="error_otp">Entered OTP is not valid</string>
+    <string name="something_went_wrong">Something went wrong!</string>
+
+    <!--Validation strings-->
+    <string name="validation_business_name">Business name cannot be empty</string>
+    <string name="validation_fullname">Fullname must be minimum 5 characters</string>
+    <string name="validation_email">Email cannot be empty</string>
+    <string name="validation_mobile">Mobile cannot be empty</string>
+    <string name="validation_password">Password cannot be empty</string>
+    <string name="validation_confirm_password">Confirm Password cannot be empty</string>
+    <string name="validation_new_password">New Password cannot be empty</string>
+    <string name="validation_new_confirm_password">Confirm New Password cannot be empty</string>
+    <string name="validation_profile_image">Profile photo cannot be empty</string>
+    <string name="validation_current_password">Current password cannot be empty</string>
+    <string name="validation_message">Message cannot be empty</string>
+    <string name="validation_description">Description cannot be empty</string>
+    <string name="validation_description2">Description must be minimum 20 characters</string>
+    <string name="validation_photo_min">Minimum 1 property image required</string>
+    <string name="validation_photo_max">Maximum 10 property image allowed</string>
+
+    <!--Permission strings-->
+    <string name="permission_error">App requires permission to access future</string>
+    <string name="permission_storage">Allow access to photos</string>
+    <string name="permission_location">Allow access to your location</string>
+    <string name="permission_audio">Please grant audio permission for record your voice</string>
+    <string name="location_error">We are unable to find your device location, Kindly follow below steps to use the application.\n
+        - Restart the your device\n
+        - Make sure your device location is turned on\n
+        - Open Google Map application\n</string>
+    <string name="permission_always_denied">You have denied the permission permanently, Kindly go to "Settings" and allow for permission to access this feature.</string>
+    <string name="str_location_hint_1">Allow “Application” to access\nYour location?</string>
+    <string name="str_location_jint">We need to access your location to show you relevant search results</string>
+    <string name="str_location_fetching">Finding Location</string>
+    <string name="gps_permission_msg">GPS is disabled in your device. Would you like to enable it?</string>
+
+    <string name="default_notification_channel_id">1</string>
+    <string name="no_data_found">No data found</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="settings">Settings</string>
+
+    <!--Gallery strings-->
+    <string name="select_from_gallery">Select From Gallery</string>
+    <string name="select_images">Select Images</string>
+    <string name="select_video">Select Video</string>
+
+    <!--login singup module and other strings-->
+    <string name="str_continue">Continue</string>
+    <string name="skip">Skip</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="logout_question">Are you sure you want to logout?</string>
+    <string name="singup">Signup</string>
+    <string name="forgot">Forgot Password?</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="write_current_pass">Write Current Password</string>
+    <string name="remember_password">Remember Password</string>
+    <string name="dont_have_account">Don\'t have an account? Create one now</string>
+    <string name="already_have_account">Already have an account? Login here</string>
+    <string name="by_continue_1">By continuing you agree with </string>
+    <string name="and">and</string>
+    <string name="create_account">Create \nan account</string>
+    <string name="click_to_upload">Click to upload your Photo</string>
+    <string name="full_name">Full Name</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="close">Close</string>
+    <string name="change_password">Change Password</string>
+    <string name="about_us">About Us</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="faqs">FAQ\'s</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="forgot_password">Forgot \nPassword</string>
+    <string name="reset_password">Reset \nPassword</string>
+    <string name="change_password_com">Change \nPassword</string>
+    <string name="forgot_pass_desc">Enter your registered email address to create a new password.</string>
+    <string name="rest_pass_desc">Your identity is verified! now you can create your new password for login.</string>
+    <string name="change_pass_desc">Your identity is verified! now you can create your new password for login.</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="submit">Submit</string>
+    <string name="reset_pass_otp">You will receive the verification code on your phone number.</string>
+    <string name="reset">Reset</string>
+    <string name="otp_verification">OTP \nVerification</string>
+    <string name="otp_sent_msg">Enter the 4 digit verification code sent via email</string>
+    <string name="resend_otp">Resend OTP?</string>
+    <string name="verify">Verify</string>
+    <string name="update">update</string>
+
+
+    <!--Army!!! Please add more strings below-->
+
+
+</resources>

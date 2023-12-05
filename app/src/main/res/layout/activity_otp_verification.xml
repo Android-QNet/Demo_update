@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.loginsignup.activities.OtpVerificationActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"
+                android:src="@drawable/ic_arrow_back_black" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/tvStyleBold"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"
+                android:text="@string/otp_verification"
+                android:textSize="@dimen/text_header_regular" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/tvStyleRegular"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:layout_marginRight="@dimen/margin_16"
+                android:text="@string/otp_sent_msg"
+                android:textColor="@color/colorTextSecondary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_05"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@color/divider" />
+
+            <com.mukesh.OtpView
+                android:id="@+id/otpView"
+                style="@style/tvStyleBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/margin_24"
+                android:layout_marginTop="@dimen/margin_24"
+                android:layout_marginEnd="@dimen/margin_24"
+                android:inputType="number"
+                android:itemBackground="@drawable/edit_text_selected"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/text_header_medium"
+                app:OtpItemCount="4"
+                app:OtpItemHeight="@dimen/_50sdp"
+                app:OtpItemSpacing="@dimen/margin_16"
+                app:OtpItemWidth="@dimen/_60sdp"
+                app:OtpViewType="none" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_24"
+                android:layout_marginEnd="@dimen/margin_16">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvResendCode"
+                    style="@style/tvStyleRegular"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="@string/resend_otp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_body2" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvSeconds"
+                    style="@style/tvStyleRegular"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="00:00"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/text_body2" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnVerify"
+                style="@style/btnStyle"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_24"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:layout_marginBottom="@dimen/margin_24"
+                android:text="@string/verify"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

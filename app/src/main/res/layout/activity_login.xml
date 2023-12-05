@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.loginsignup.LoginActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llSkip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/margin_48"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:layout_marginRight="@dimen/margin_16"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_8sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/tvStyleRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="@string/skip"
+                    android:textColor="@color/colorTextSecondary" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/margin_16"
+                    android:layout_height="@dimen/margin_16"
+                    android:padding="@dimen/_2sdp"
+                    android:rotation="-90"
+                    android:src="@drawable/ic_arrow_down_img" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/tvStyleBold"
+                android:layout_marginTop="@dimen/margin_48"
+                android:text="@string/login"
+                android:textSize="@dimen/text_header_regular" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtEmail"
+                style="@style/edtStyle"
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_24"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:drawablePadding="@dimen/margin_16"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:maxLength="@integer/max_length_email"
+                android:padding="@dimen/margin_16"
+                android:textSize="@dimen/text_body2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_16">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtPassword"
+                    style="@style/edtStyle"
+                    android:layout_width="match_parent"
+                    android:drawablePadding="@dimen/margin_16"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:maxLength="@integer/max_length_password"
+                    android:padding="@dimen/margin_16"
+                    android:textSize="@dimen/text_body2" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvForgot"
+                    style="@style/tvStyleRegular"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/forgot"
+                    android:textColor="@color/colorRed" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnContinue"
+                style="@style/btnStyle"
+                android:layout_margin="@dimen/margin_16"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvSignup"
+                    style="@style/btnStyle"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:text="@string/singup"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/tvStyleRegular"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_16"
+                    android:layout_marginEnd="@dimen/margin_8"
+                    android:gravity="start"
+                    android:text="@string/dont_have_account"
+                    app:layout_constraintBottom_toBottomOf="@id/tvSignup"
+                    app:layout_constraintEnd_toStartOf="@id/tvSignup"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvSignup" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/tvStyleBold"
+                android:layout_marginTop="@dimen/margin_24"
+                android:text="@string/by_continue_1"
+                android:textColor="@color/colorTextSecondary" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_48"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTermsAndCondition"
+                    style="@style/tvStyleBold"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="@string/terms_and_conditions" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/tvStyleBold"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:layout_marginEnd="@dimen/margin_8"
+                    android:text="@string/and"
+                    android:textColor="@color/colorTextSecondary" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPrivacyPolicy"
+                    style="@style/tvStyleBold"
+                    android:background="?attr/selectableItemBackground"
+                    android:text="@string/privacy_policy" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
